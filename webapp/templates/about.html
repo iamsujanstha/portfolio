@@ -1,0 +1,56 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+<div class = "about">
+    <div class="left">
+        <div class="identity">
+            <h2 class="about-title">Sujan Kumar Shrestha</h2>
+            <h5>Full Stack Developer</h5>
+            <div class="icon">
+                <p><span><i class="fa-solid fa-location-dot"></i></span>Tanahun, Nepal</p>
+            </div>
+            <hr style="width:60%;">
+            <div class="description">
+                <p>I have good knowledge in basic HTML/CSS, Django, React JS and DjangoREST framework. Now I am creating beautiful project on Django framework to gain experience and skills in this stack. I have completed few Frontend & Fullstack projects.</p>
+            </div>
+        
+            <div class="skills">
+                <h5>Area of Expertise</h5>
+                <div>
+                    <p>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Django | REST API | Jinja2
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Python 
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-circle-check"></i>
+                        HTML5, CSS3 & Saas
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-circle-check"></i>
+                        React | React Router Dom, React Hooks, Context API
+                    </p>  
+                    <p>
+                        <i class="fa-solid fa-circle-check"></i>
+                        PostgreSQL & MySQL
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <img class="gif" src="{% static 'images/giphy.gif' %}" alt="">
+        <div class="social">
+            <h5>Social Profiles</h5>
+            <a href="">Linkedin</a>
+            <a href="">GitHub</a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock%}

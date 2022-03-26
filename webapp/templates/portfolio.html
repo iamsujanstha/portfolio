@@ -1,0 +1,37 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<div class="cards">
+    {% for detail in details  %}
+    <div class="card">
+      <img class="card__image" src="{{ detail.thumbnail.url }}" alt="">
+      <div class="card__content">
+        <h4 class="card-title">{{detail.title}}</h4>
+        <p>
+            {{detail.description}}
+        </p>
+        <h6 class="card-title">Features :</h6>
+      {% for skill in detail.skill.all  %}
+        <p class = "learned-skill">
+          <i class="fa-solid fa-circle-check"></i>
+          {{skill}}
+       </p>
+
+      
+      {% endfor %}
+      <div class="keywords">
+      {% for tg in detail.tag.all  %}
+     
+        <span>{{tg}}</span>
+   
+   
+    {% endfor %}
+  </div>
+    
+  
+    </div>
+      </div>
+    {% endfor %}
+</div>
+  
+{% endblock%}
