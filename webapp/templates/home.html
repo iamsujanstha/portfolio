@@ -1,47 +1,71 @@
-{% extends 'main.html' %}
-{% load static %}
-{% block content %}
+{% extends 'main.html' %} {% load static %} {% block content %}
 
 <div class="row">
-    <div class="col-xs-10 col-sm-7">
-     <div class="content">
-        <h2 class = "content-title">Sujan Kumar Shrestha</h2>
-        <h4 class="content-subtitle">I'm a <span class = "auto-input" style="color: #2431f7 ;"></span></h4>
-        <p class="content-desc">Hi, I'm Sujan Shrestha from Tanahun, Nepal. I am dedicated development professional with utilizing and organized practice. I believe in deep work while solving any problem. Skilled in adapting to new situations and challenges to best enhance the personal growth.</p>
-        <a href="{% url 'contact' %}" style="margin-left:0px"><button class = "btn btn-outline-primary btn-md">Contact Me</button></a>
-        <a href="{% static 'images/cv.pdf' %}" download target="_blank"><button  class="btn btn-primary btn-md"><i style="color: white" class="fa-solid fa-download"></i>Download CV</button> </a>
-        
+  <div class="col-xs-10 col-sm-7">
+    <div class="content">
+      <h2 class="content-title">Sujan Kumar Shrestha</h2>
+      <h4 class="content-subtitle">
+        I'm a <span class="auto-input" style="color: #2431f7"></span>
+      </h4>
+      <p class="content-desc">
+        Hi, I'm Sujan Shrestha from Tanahun, Nepal. I am dedicated development
+        professional with utilizing and organized practice. I believe in deep
+        work while solving any problem. Skilled in adapting to new situations
+        and challenges to best enhance the personal growth.
+      </p>
+      <a href="{% url 'contact' %}" style="margin-left: 0px"
+        ><button class="btn btn-outline-primary btn-md">Contact Me</button></a
+      >
+      <a href="{% static 'images/SujanCV.pdf' %}" download target="_blank"
+        ><button class="btn btn-primary btn-md">
+          <i style="color: white" class="fa-solid fa-download"></i>Download CV
+        </button>
+      </a>
+    </div>
+  </div>
+  <div class="col-xs-10 col-sm-4">
+    <div class="img-content">
+      <img
+        class="img-skill"
+        src="{% static 'images/reactjs.png'%}"
+        alt="html"
+      />
+      <img
+        class="img-skill"
+        src="{% static 'images/python1.png' %}"
+        alt="html"
+      />
+      <img
+        class="img-skill"
+        src="{% static 'images/django.png' %}"
+        alt="html"
+      />
+      <img
+        class="img-skill"
+        src="{% static 'images/djangoRest.png'%}"
+        alt="html"
+      />
+      <img class="img-skill" src="{% static 'images/html5.png'%}" alt="html" />
+      <img class="img-skill" src="{% static 'images/css-3.png'%}" alt="html" />
+      <img class="img-skill" src="{% static 'images/styled.png'%}" alt="html" />
 
-     </div> 
+      <img class="img-skill" src="{% static 'images/github.png'%}" alt="html" />
+      <img class="img-skill" src="{% static 'images/git.png'%}" alt="html" />
+      <img class="img-skill" src="{% static 'images/Redux.png'%}" alt="html" />
+
+      <img class="img-skill" src="{% static 'images/mysql.png'%}" alt="html" />
+      <img class="img-skill" src="{% static 'images/logo.png'%}" alt="html" />
     </div>
-    <div class="col-xs-10 col-sm-4">
-        <div class="img-content">
-     
-        <img class = "img-skill" src="{% static 'images/python1.png' %}" alt="html">
-        <img class = "img-skill" src="{% static 'images/django.png' %}" alt="html">
-        <img class = "img-skill" src="{% static 'images/djangoRest.png'%}" alt="html">
-        <img class = "img-skill" src="{% static 'images/html5.png'%}" alt="html">
-        <img class = "img-skill" src="{% static 'images/css-3.png'%}" alt="html">
-        <img class = "img-skill" src="{% static 'images/sass.png'%}" alt="html">
-        <img class = "img-skill" src="{% static 'images/reactjs.png'%}" alt="html">
-        <img class = "img-skill" src="{% static 'images/github.png'%}" alt="html">
-        <img class = "img-skill" src="{% static 'images/git.png'%}" alt="html">
-        <img class = "img-skill" src="{% static 'images/postgreSql.png'%}" alt="html">
-        
-        <img class = "img-skill" src="{% static 'images/sqlite.jpg'%}" alt="html">
-        <img class = "img-skill" src="{% static 'images/bootstrap.png'%}" alt="html">
-    </div>
-    </div>
+  </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
-    var options = new Typed(".auto-input",{
-        strings: [" Python Developer.", "Full Stack Developer."],
-        typeSpeed: 100,
-        backSpeed:100,
-        loop: true
-      });
-      
+  var options = new Typed(".auto-input", {
+    strings: [" Web Developer.", "Full Stack Developer."],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true,
+  });
 </script>
 
 {% endblock%}
